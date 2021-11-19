@@ -78,11 +78,11 @@ public class LevelParser : MonoBehaviour
             for (int i = 0; i < colors.Length; i++)
             {
                 Color col = colors[i];
-                if (col == new Color(0f, 0f, 0f, 1f)) //black/Ground
+                if ( col == new Color(0f, 0f, 0f, 1f) ) //black/Ground
                 {
                     levels[k].layerBackground.Add(TileId.Ground);
                 }
-                else if (col == new Color(0f, 1f, 1f, 1f)) //cyan/water
+                else if ( col == new Color(0f, 1f, 1f, 1f) ) //cyan/water
                 {
                     levels[k].layerBackground.Add(TileId.Water);
                 }

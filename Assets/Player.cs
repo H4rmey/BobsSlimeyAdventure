@@ -8,7 +8,6 @@ public class Player : MonoBehaviour
     public Vector2 gridPos      = new Vector2(0, 0);
     public Vector2 nextGridPos  = new Vector2(0, 0);
 
-
     public int      sizeMax = 16;
     public int      sizeMin = 6;
     public float    size;
@@ -60,10 +59,10 @@ public class Player : MonoBehaviour
         }
 
         float newSizeScale = Mathf.Lerp(
-                            transform.localScale.x,
-                            (float)size / (float)sizeMax,
-                            sizeStepDownTime * Time.deltaTime
-                        ); 
+                                transform.localScale.x,
+                                (float)size / (float)sizeMax,
+                                sizeStepDownTime * Time.deltaTime
+                            ); 
         transform.localScale = new Vector3(newSizeScale, newSizeScale, 1);
     }
 }
